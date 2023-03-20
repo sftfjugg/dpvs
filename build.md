@@ -1,3 +1,1 @@
-yum install numactl-devel
-
-yum --enablerepo=elrepo-kernel install kernel-lt-devel
+yum install numactl-devel popt-devel openssl-devel libpcap-devel libpcap autoreconf automake
