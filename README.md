@@ -4,6 +4,8 @@ https://www.cnblogs.com/wt11/p/15417103.html
 
 https://blog.csdn.net/qq_36885515/article/details/123138343
 
+`make config T=x86_64-native-linuxapp-gcc O=x86_64-native-linuxapp-gcc`
+
 ![dpvs-logo.png](./pic/DPVS-logo.png)
 
 # Introduction
