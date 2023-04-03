@@ -6,6 +6,8 @@ https://blog.csdn.net/qq_36885515/article/details/123138343
 
 `make config T=x86_64-native-linuxapp-gcc O=x86_64-native-linuxapp-gcc`
 
+`make install T=${RTE_TARGET} DESTDIR=${RTE_SDK}`
+
 ![dpvs-logo.png](./pic/DPVS-logo.png)
 
 # Introduction
