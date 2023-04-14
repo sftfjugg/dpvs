@@ -8,6 +8,18 @@ https://blog.csdn.net/qq_36885515/article/details/123138343
 
 `make install T=${RTE_TARGET} DESTDIR=${RTE_SDK}`
 
+多核编程框架及 CPU 亲和性
+
+巨页（HugePage），减少页表项数目，降低 TLB miss
+
+无锁队列
+
+UIO 支持，用户态驱动，减少报文 copy
+
+poll-mode 网卡模式，无中断轮询收包
+
+-----------
+
 ![dpvs-logo.png](./pic/DPVS-logo.png)
 
 # Introduction
