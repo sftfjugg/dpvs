@@ -8,6 +8,11 @@ https://blog.csdn.net/qq_36885515/article/details/123138343
 
 `make install T=${RTE_TARGET} DESTDIR=${RTE_SDK}`
 
+
+dpdk运行于通用linux+x86系统上的，具有intel核心的网卡即可。
+
+dpdk的特点有：
+
 多核编程框架及 CPU 亲和性
 
 巨页（HugePage），减少页表项数目，降低 TLB miss
@@ -17,6 +22,14 @@ https://blog.csdn.net/qq_36885515/article/details/123138343
 UIO 支持，用户态驱动，减少报文 copy
 
 poll-mode 网卡模式，无中断轮询收包
+
+Dpdk驱动拿数据，绕过内核，跑在用户态，避免核心态到用户态的拷贝，即UIO
+
+利用cpu亲和性，线程绑定核，避免线程核间切换开销
+
+使用大页缓存提高内存访问效率
+
+轮询代替中断，提高报文的收发效率
 
 -----------
 
